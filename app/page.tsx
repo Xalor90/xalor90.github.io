@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Headshot from "@/public/headshot.jpg";
+import Experience from "@/app/components/resume/experience";
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="
-      border-x-2
-      border-x-slate-500
+      sm:border-x-2
+      sm:border-x-slate-500
       bg-white
       mx-auto
       max-w-full 
@@ -56,6 +57,16 @@ export default function Home() {
             lg:text-2xl">Senior Software Engineer & DevOps Engineer</p>
         </div>
       </div>
+      <div className="
+			  px-2">
+        <h2 className="
+          text-slate-500
+      	  sm:text-lg
+          font-bold">Experience</h2>
+        <Experience />
+      </div>
     </main>
   );
-}
+};
+
+export default Home;
