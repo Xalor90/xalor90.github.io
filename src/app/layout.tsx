@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<meta name="google-adsense-account" content="ca-pub-7341003480978036" />
+			</head>
 			<body className="antialiased flex flex-col min-h-screen bg-background text-foreground">
 				<Header />
 				<div className="flex-1 flex flex-col lg:flex-row max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 gap-8">
