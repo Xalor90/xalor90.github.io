@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* ----- Fonts ----- */
+
+/* Ubuntu */
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/ubuntu@latest/latin-400-normal.woff2) format('woff2');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* Ubuntu Mono */
+@font-face {
+	font-family: 'Ubuntu Mono';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/ubuntu-mono@latest/latin-400-normal.woff2) format('woff2');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@theme {
+	--font-sans: 'Ubuntu', Arial, Helvetica, sans-serif;
+	--font-mono: 'Ubuntu Mono', Menlo, Monaco, Consolas, 'Courier New', monospace;
+	--color-foreground: #000099;
+	--color-hover-foreground: #0000ff;
+	--color-background: #BDBBB2;
+	--color-highlight: #C9C8BF;
+	--color-shadow: #AFACA1;
+}
+
+body {
+	background: var(--color-background);
+	color: var(--color-foreground);
+	font-family: var(--font-sans);
+}
